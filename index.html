@@ -4,232 +4,247 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arpit Patel – Power Platform &amp; SharePoint Developer</title>
-<meta name="description" content="Microsoft-certified Power Platform and SharePoint developer with 12+ years of experience building automation, apps and intranets for enterprise clients.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<meta name="description" content="Microsoft-certified Power Platform and SharePoint developer with 12+ years of experience building apps, automation and intranets for enterprise clients.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#f1f5f8; --surface:#ffffff; --ink:#0f2236; --muted:#4a5d70; --line:#d3dde6;
-  --accent:#0a6f8f; --accent-ink:#ffffff;
-  --c1:#9fb8c8; --c2:#6a95ae; --c3:#2f6f92; --c4:#0a6f8f;
-}
-@media (prefers-color-scheme:dark){
-  :root{--bg:#0d1823; --surface:#14232f; --ink:#e8eff5; --muted:#9db0c0; --line:#26394a;
-    --accent:#5cc4e4; --accent-ink:#06202b; --c1:#35566b; --c2:#3f7694; --c3:#4c9bc0; --c4:#5cc4e4;}
-}
+:root{--ink:#17142b;--bg:#f6f4fa;--muted:#575470;--line:#e0dcea;--pa:#742774;--au:#0066ff;--bi:#f2c811;--sp:#038387;--dv:#5b5fc7;
+--stripe:linear-gradient(90deg,var(--pa) 0 20%,var(--au) 20% 40%,var(--bi) 40% 60%,var(--sp) 60% 80%,var(--dv) 80%)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
-h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
-a{color:var(--accent)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
-nav{display:flex;gap:1.5rem;justify-content:flex-end;padding:1.25rem 0;font-weight:500}
-nav a{color:var(--muted);text-decoration:none}
-nav a:hover{color:var(--accent)}
-header.hero{padding:2.5rem 0 4rem}
-h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
-.role{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--muted);margin:1rem 0 2rem;max-width:36rem}
+h1,h2,h3,.num{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--au)}
+:focus-visible{outline:3px solid var(--bi);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+.stripe{height:6px;background:var(--stripe)}
+.hero{background:radial-gradient(60rem 30rem at 85% 0,#3a1f5e 0,transparent 60%),#17142b;color:#fff;padding-bottom:4rem}
+nav{display:flex;gap:1.5rem;justify-content:flex-end;padding:1.2rem 0;font-weight:500;flex-wrap:wrap}
+nav a{color:#c9c4e0;text-decoration:none}
+nav a:hover{color:var(--bi)}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding-top:1.5rem}
+h1{font-size:clamp(2.8rem,8vw,5.2rem);font-weight:800;letter-spacing:-.03em}
+.role{font-size:clamp(1.1rem,2.6vw,1.35rem);color:#d6d2ea;margin:1.1rem 0 2rem;max-width:34rem}
 .btns{display:flex;flex-wrap:wrap;gap:.75rem}
-.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:.4rem;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
-.btn.primary{background:var(--accent);color:var(--accent-ink)}
-.btn.ghost{color:var(--accent)}
-.career{margin-top:3.5rem}
-.career p{margin:0 0 .6rem;color:var(--muted);font-size:.95rem}
-.bar{display:flex;gap:3px;height:3.2rem}
-.bar div{display:flex;align-items:flex-end;padding:.35rem .6rem;font-size:.8rem;font-weight:500;color:#fff;border-radius:.25rem;overflow:hidden;white-space:nowrap}
-.bar .s1{flex:1.4;background:var(--c1);color:var(--ink)}
-.bar .s2{flex:2;background:var(--c2)}
-.bar .s3{flex:5.6;background:var(--c3)}
-.bar .s4{flex:4.4;background:var(--c4);color:var(--accent-ink)}
-.years{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted);margin-top:.4rem}
-section{padding:3.5rem 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.5rem}
-.about{max-width:42rem;font-size:1.15rem}
-.about p{margin:0 0 1rem}
-dl.skills{display:grid;grid-template-columns:minmax(10rem,14rem) 1fr;gap:1.1rem 2rem;margin:0}
-dl.skills dt{font-weight:500}
-dl.skills dd{margin:0;color:var(--muted)}
-.job{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 2rem;padding:1.6rem 0;border-bottom:1px solid var(--line)}
-.job:first-of-type{padding-top:0}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:.4rem;font-weight:500;text-decoration:none;border:2px solid var(--bi);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--bi);color:#17142b}
+.btn.ghost{color:#fff;border-color:#8b84b5}
+.flow{background:#fff;color:var(--ink);border-radius:.7rem;padding:1.2rem;box-shadow:0 20px 50px #0008}
+.fhead{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-bottom:1rem;font-weight:500}
+.fhead small{color:var(--muted);font-weight:400}
+.flow ol{list-style:none;margin:0 0 1rem;padding:0}
+.node{position:relative;display:flex;align-items:center;gap:.8rem;border:2px solid var(--line);border-radius:.5rem;padding:.65rem .8rem;margin-bottom:1rem;transition:.25s}
+.node:not(:last-child)::after{content:"";position:absolute;left:1.55rem;top:100%;height:1rem;width:2px;background:var(--line)}
+.ic{flex:none;width:2.2rem;height:2.2rem;border-radius:.4rem;background:var(--nc);display:grid;place-items:center;font-size:1.1rem}
+.node b{display:block;font-size:.95rem;line-height:1.3}
+.node small{color:var(--muted);font-size:.8rem}
+.st{margin-left:auto;font-weight:700;font-style:normal;color:#107c10}
+.node.run{border-color:var(--nc);box-shadow:0 0 0 4px color-mix(in srgb,var(--nc) 25%,transparent);animation:pulse .7s infinite alternate}
+.node.run .st::before{content:"…";color:var(--muted)}
+.node.done{border-color:#107c10;background:#f0faf0}
+.node.done .st::before{content:"✓"}
+@keyframes pulse{to{transform:scale(1.015)}}
+.run-btn{width:100%;padding:.7rem;border:0;border-radius:.4rem;background:var(--au);color:#fff;font:500 1rem "IBM Plex Sans",sans-serif;cursor:pointer}
+.run-btn:disabled{opacity:.6;cursor:wait}
+#fstatus{display:block;text-align:center;margin-top:.6rem;color:var(--muted);font-size:.85rem;min-height:1.3rem}
+section{padding:4rem 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1.5rem}
+.lead{max-width:44rem;font-size:1.15rem;margin:0 0 2.2rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem}
+.stat{background:#fff;border-radius:.5rem;padding:1.2rem;border-top:6px solid var(--c)}
+.num{font-size:3rem;font-weight:800;display:block}
+.stat span.l{color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.2rem}
+.tab{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1.1rem;border:2px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font:500 .95rem "IBM Plex Sans",sans-serif;cursor:pointer;transition:.15s}
+.tab::before{content:"";width:.7rem;height:.7rem;border-radius:50%;background:var(--c)}
+.tab:hover{border-color:var(--c)}
+.tab[aria-pressed=true]{background:var(--c);border-color:var(--c);color:var(--ci,#fff)}
+.tab[aria-pressed=true]::before{background:var(--ci,#fff)}
+.panel{background:#fff;border-radius:.6rem;border-left:8px solid var(--pc,var(--pa));padding:1.6rem 1.8rem;animation:fade .3s}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+.panel h3{font-size:1.6rem;margin-bottom:.5rem}
+.panel p{margin:0 0 1rem;color:var(--muted)}
+.panel ul{margin:0;padding-left:1.2rem}
+.panel li{margin-bottom:.35rem}
+.also{margin-top:1rem;color:var(--muted);font-size:.95rem}
+.job{display:grid;grid-template-columns:10.5rem 1fr;gap:.4rem 2rem;padding:1.5rem 0 1.5rem 1.2rem;border-bottom:1px solid var(--line);border-left:6px solid transparent;transition:.25s}
+.job.hit{border-left-color:var(--jc);background:linear-gradient(90deg,color-mix(in srgb,var(--jc) 10%,transparent),transparent 60%)}
+.job.dim{opacity:.28}
 .job time{color:var(--muted);font-size:.95rem}
-.job h3{font-size:1.3rem;margin-bottom:.15rem}
-.job .org{color:var(--accent);font-weight:500;margin:0 0 .6rem}
+.job h3{font-size:1.25rem}
+.org{color:var(--pa);font-weight:500;margin:.1rem 0 .6rem}
 .job ul{margin:0;padding-left:1.1rem}
-.job li{margin-bottom:.35rem}
-.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;list-style:none;margin:0;padding:0}
-.certs li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);padding:1rem 1.1rem;border-radius:.3rem}
-.certs b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem;display:block}
-.certs span{color:var(--muted);font-size:.95rem}
-.contact p{max-width:34rem;margin:0 0 1.5rem}
-footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
-@media (max-width:42rem){
-  dl.skills,.job{grid-template-columns:1fr}
-  dl.skills dd{margin-bottom:.6rem}
-  .bar div{font-size:.65rem;padding:.25rem .3rem}
-  nav{justify-content:flex-start;flex-wrap:wrap;gap:1rem}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.job li{margin-bottom:.3rem}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;list-style:none;margin:0;padding:0}
+.certs li{background:#fff;border-top:6px solid var(--c);border-radius:.4rem;padding:1.1rem;transition:transform .2s,box-shadow .2s}
+.certs li:hover{transform:translateY(-4px);box-shadow:0 10px 24px #17142b22}
+.certs b{font:800 1.6rem "Bricolage Grotesque",sans-serif;display:block}
+.certs span{color:var(--muted)}
+.contact{background:#17142b;color:#fff}
+.contact p{max-width:34rem;margin:0 0 1.5rem;color:#d6d2ea}
+footer{background:#17142b;color:#9a94c0;padding:1.5rem 0 2.5rem;font-size:.9rem}
+@media (max-width:50rem){.hgrid{grid-template-columns:1fr;gap:2rem}.job{grid-template-columns:1fr}nav{justify-content:flex-start}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <nav aria-label="Main">
-    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
-  </nav>
-
-  <header class="hero">
+<div class="stripe"></div>
+<div class="hero">
+ <div class="wrap">
+  <nav aria-label="Main"><a href="#about">About</a><a href="#build">What I build</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></nav>
+  <div class="hgrid">
+   <div>
     <h1>Arpit Patel</h1>
     <p class="role">Power Platform and SharePoint developer. I turn manual business processes into apps, flows and intranets that people actually use.</p>
-    <div class="btns">
-      <a class="btn primary" href="#contact">Get in touch</a>
-      <a class="btn ghost" href="Arpit Patel.pdf">Download resume (PDF)</a>
-    </div>
-    <div class="career" role="img" aria-label="Career timeline from 2013 to today: Arraycom, Binary Republik, TCS, Reality-Craft">
-      <p>13 years of Microsoft 365 work, from SharePoint 2010-era portals to Power Platform at enterprise scale</p>
-      <div class="bar">
-        <div class="s1">Arraycom</div>
-        <div class="s2">Binary Republik</div>
-        <div class="s3">Tata Consultancy Services</div>
-        <div class="s4">Reality-Craft</div>
-      </div>
-      <div class="years"><span>2013</span><span>2016</span><span>2022</span><span>Today</span></div>
-    </div>
-  </header>
-
-  <section id="about">
-    <h2>About</h2>
-    <div class="about">
-      <p>I'm a Microsoft-certified developer with over 12 years in the SharePoint space and 7 years building on the Power Platform. I work with clients, many of them in finance and pharmaceuticals, to understand how their business runs, find what can be automated, and deliver solutions that last.</p>
-      <p>I also lead teams: removing blockers, reviewing code, and guiding migrations from SharePoint on-premises to SharePoint Online.</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <dl class="skills">
-      <dt>Power Platform</dt><dd>Power Apps (canvas and model-driven), Power Automate, Power BI reports and dashboards</dd>
-      <dt>SharePoint Online</dt><dd>Information architecture, custom web parts, SPFx, requirements gathering, migrations</dd>
-      <dt>Microsoft Dataverse</dt><dd>Data modeling, relationships, business rules, security roles</dd>
-      <dt>Data and reporting</dt><dd>Azure SQL (database design, queries, stored procedures), Power BI data modeling</dd>
-      <dt>Scripting and automation</dt><dd>PowerShell for SharePoint Online, Microsoft 365 and Azure</dd>
-      <dt>Delivery</dt><dd>Microsoft Teams, Jira, Planner, GitHub and Azure DevOps pipelines for Power Platform ALM</dd>
-    </dl>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <article class="job">
-      <time>May 2022 – Present</time>
-      <div>
-        <h3>Power Platform &amp; SharePoint Developer</h3>
-        <p class="org">Reality-Craft · National Australia Bank (NAB)</p>
-        <ul>
-          <li>Designed SharePoint architecture covering security, governance and compliance (Microsoft Purview retention, holds and discovery).</li>
-          <li>Led the move from SharePoint 2013 to SharePoint Online, including content analysis, mapping and migration planning.</li>
-          <li>Built a model-driven app on a custom Dataverse schema to track threat attacks and their sequences.</li>
-          <li>Delivered SPFx web parts for employee spotlight and recognition.</li>
-          <li>Migrated SharePoint Designer workflows to Power Automate; integrated Salesforce, SharePoint and SQL with Power Automate and Power BI.</li>
-          <li>Ran Power Platform ALM with GitHub and Azure DevOps pipelines.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="job">
-      <time>Mar 2019 – Apr 2022</time>
-      <div>
-        <h3>SharePoint / Power Platform Lead</h3>
-        <p class="org">Tata Consultancy Services · Johnson &amp; Johnson Services Inc</p>
-        <ul>
-          <li>Led a team of SharePoint developers across one of the largest SharePoint 2013 and SharePoint Online environments in the organization.</li>
-          <li>Converted InfoPath forms to canvas Power Apps; built a reusable recertification app, a cost calculator and a vendor invoice submission app on Dataverse.</li>
-          <li>Built a Power BI dashboard on Azure SQL data.</li>
-          <li>Managed SharePoint Online administration and external sharing policies; ran code reviews and wrote admin and user documentation.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="job">
-      <time>May 2018 – Feb 2019</time>
-      <div>
-        <h3>SharePoint Developer</h3>
-        <p class="org">Tata Consultancy Services · NBCUniversal Media, LLC</p>
-        <ul>
-          <li>Migrated file shares to SharePoint Online and OneDrive for Business with ShareGate.</li>
-          <li>Converted SharePoint Designer workflows to Power Automate and built a Process Integrity canvas app.</li>
-          <li>Built a homepage web part with the SharePoint REST API and jQuery, plus a utility to export file metadata and permissions.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="job">
-      <time>Oct 2017 – Apr 2018</time>
-      <div>
-        <h3>SharePoint Developer</h3>
-        <p class="org">Tata Consultancy Services · Kroll Information Assurance, LLC</p>
-        <ul>
-          <li>Migrated a SharePoint 2007 site to SharePoint Online using Content Matrix.</li>
-          <li>Re-engineered a complex web part and built a rewards-points canvas app.</li>
-          <li>Developed a provider-hosted app for elevated-privilege scenarios in SharePoint Online.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="job">
-      <time>Aug 2016 – Sep 2017</time>
-      <div>
-        <h3>SharePoint Developer</h3>
-        <p class="org">Tata Consultancy Services · Johnson &amp; Johnson Services Inc</p>
-        <ul>
-          <li>Built custom web parts, workflows, event receivers and publishing pages with AngularJS, jQuery and JavaScript.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="job">
-      <time>Sep 2014 – Aug 2016</time>
-      <div>
-        <h3>SharePoint Developer</h3>
-        <p class="org">Binary Republik</p>
-        <ul>
-          <li>Delivered custom web parts, workflows, remote event receivers and publishing page layouts for pharmaceutical and finance clients.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="job">
-      <time>Apr 2013 – Aug 2014</time>
-      <div>
-        <h3>Junior SharePoint Developer</h3>
-        <p class="org">Arraycom (India) Ltd.</p>
-        <ul>
-          <li>Built a tiered portal with jQuery and the Ajax toolkit, wrote stored procedures and deployed applications on IIS at client sites.</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul class="certs">
-      <li><b>PL-900</b><span>Power Platform Fundamentals</span></li>
-      <li><b>PL-100</b><span>Power Platform App Maker</span></li>
-      <li><b>PL-200</b><span>Power Platform Functional Consultant</span></li>
-      <li><b>PL-400</b><span>Power Platform Developer Associate</span></li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Have a SharePoint migration, a Power Apps build or an automation problem? Send me a note.</p>
-    <div class="btns"><a class="btn primary" href="mailto:arpit6885@gmail.com">Email Arpit</a><a class="btn ghost" href="https://www.linkedin.com/in/arpit-patel-83827642/" target="_blank" rel="noopener">LinkedIn profile</a></div>
-  </section>
-
-  <footer>© <span id="yr">2026</span> Arpit Patel</footer>
+    <div class="btns"><a class="btn primary" href="#contact">Get in touch</a><a class="btn ghost" href="Arpit_Patel.pdf">Download resume (PDF)</a></div>
+   </div>
+   <div class="flow" aria-label="Interactive demo of a Power Automate approval flow">
+    <div class="fhead"><span>Purchase approval</span><small>Cloud flow · demo</small></div>
+    <ol>
+     <li class="node" style="--nc:var(--sp)"><span class="ic">📄</span><span><b>When an item is created</b><small>SharePoint · Purchase requests</small></span><i class="st"></i></li>
+     <li class="node" style="--nc:var(--bi)"><span class="ic">🔀</span><span><b>Condition: amount over $5,000</b><small>Control</small></span><i class="st"></i></li>
+     <li class="node" style="--nc:var(--au)"><span class="ic">✅</span><span><b>Start approval, notify in Teams</b><small>Power Automate · Approvals</small></span><i class="st"></i></li>
+     <li class="node" style="--nc:var(--dv)"><span class="ic">🗄️</span><span><b>Update row, send reminder</b><small>Dataverse · Outlook</small></span><i class="st"></i></li>
+    </ol>
+    <button class="run-btn" id="run">▶ Run the flow</button>
+    <span id="fstatus" role="status">Press run to see it work.</span>
+   </div>
+  </div>
+ </div>
 </div>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<section id="about"><div class="wrap">
+ <h2>About</h2>
+ <p class="lead">I’m a Microsoft-certified developer working with clients in finance, healthcare and media. I learn how a business runs, find what can be automated, and deliver solutions that last, from SharePoint migrations to Dataverse-backed apps. I also lead teams, review code and clear blockers.</p>
+ <div class="stats">
+  <div class="stat" style="--c:var(--sp)"><span class="num"><span data-n="12">12</span>+</span><span class="l">years in SharePoint</span></div>
+  <div class="stat" style="--c:var(--pa)"><span class="num"><span data-n="7">7</span>+</span><span class="l">years on Power Platform</span></div>
+  <div class="stat" style="--c:var(--au)"><span class="num"><span data-n="4">4</span></span><span class="l">Microsoft certifications</span></div>
+  <div class="stat" style="--c:var(--bi)"><span class="num"><span data-n="7">7</span></span><span class="l">enterprise engagements</span></div>
+ </div>
+</div></section>
+
+<section id="build" style="padding-top:0"><div class="wrap">
+ <h2>What I build with</h2>
+ <div class="tabs" id="tabs" role="group" aria-label="Choose a technology"></div>
+ <div class="panel" id="panel" aria-live="polite"></div>
+ <p class="also">Also: Azure SQL · PowerShell · Microsoft Teams · Jira · Planner · GitHub · Azure DevOps</p>
+</div></section>
+
+<section id="experience" style="padding-top:0"><div class="wrap">
+ <h2>Experience</h2>
+ <p class="lead" style="margin-bottom:1rem">Filter my roles by technology.</p>
+ <div class="tabs" id="filters" role="group" aria-label="Filter experience"></div>
+ <div id="jobs">
+  <article class="job" data-t="sp apps au bi dv">
+   <time>May 2022 – Present</time>
+   <div><h3>Power Platform &amp; SharePoint Developer</h3><p class="org">Reality-Craft · National Australia Bank (NAB)</p>
+   <ul><li>Designed SharePoint architecture covering security, governance and Microsoft Purview retention, holds and discovery.</li>
+   <li>Led the move from SharePoint 2013 to SharePoint Online, with content analysis, mapping and migration planning.</li>
+   <li>Built a model-driven app on a custom Dataverse schema to track threat attacks and sequences.</li>
+   <li>Delivered SPFx web parts for employee spotlight and recognition.</li>
+   <li>Moved SharePoint Designer workflows to Power Automate; integrated Salesforce, SharePoint and SQL; built Power BI reports; ran ALM with GitHub and Azure DevOps.</li></ul></div>
+  </article>
+  <article class="job" data-t="sp apps au bi dv">
+   <time>Mar 2019 – Apr 2022</time>
+   <div><h3>SharePoint / Power Platform Lead</h3><p class="org">Tata Consultancy Services · Johnson &amp; Johnson Services Inc</p>
+   <ul><li>Led SharePoint developers across one of the largest SharePoint 2013 and SharePoint Online environments in the organization.</li>
+   <li>Converted InfoPath forms to canvas apps; built a recertification app, a cost calculator and a vendor invoice app on Dataverse.</li>
+   <li>Built a Power BI dashboard on Azure SQL; ran code reviews and wrote admin and user guides.</li>
+   <li>Managed SharePoint Online administration and external sharing policies.</li></ul></div>
+  </article>
+  <article class="job" data-t="sp apps au">
+   <time>May 2018 – Feb 2019</time>
+   <div><h3>SharePoint Developer</h3><p class="org">Tata Consultancy Services · NBCUniversal Media, LLC</p>
+   <ul><li>Migrated file shares to SharePoint Online and OneDrive for Business with ShareGate.</li>
+   <li>Converted SharePoint Designer workflows to Power Automate and built a Process Integrity canvas app.</li>
+   <li>Built a REST API and jQuery homepage web part and a metadata and permissions export utility.</li></ul></div>
+  </article>
+  <article class="job" data-t="sp apps">
+   <time>Oct 2017 – Apr 2018</time>
+   <div><h3>SharePoint Developer</h3><p class="org">Tata Consultancy Services · Kroll Information Assurance, LLC</p>
+   <ul><li>Migrated a SharePoint 2007 site to SharePoint Online with Content Matrix.</li>
+   <li>Re-engineered a complex web part, built a rewards-points canvas app and a provider-hosted app for elevated privileges.</li></ul></div>
+  </article>
+  <article class="job" data-t="sp">
+   <time>Aug 2016 – Sep 2017</time>
+   <div><h3>SharePoint Developer</h3><p class="org">Tata Consultancy Services · Johnson &amp; Johnson Services Inc</p>
+   <ul><li>Built custom web parts, workflows, event receivers and publishing pages with AngularJS, jQuery and JavaScript.</li></ul></div>
+  </article>
+  <article class="job" data-t="sp">
+   <time>Sep 2014 – Aug 2016</time>
+   <div><h3>SharePoint Developer</h3><p class="org">Binary Republik</p>
+   <ul><li>Delivered web parts, workflows, remote event receivers and page layouts for pharmaceutical and finance clients.</li></ul></div>
+  </article>
+  <article class="job" data-t="sp">
+   <time>Apr 2013 – Aug 2014</time>
+   <div><h3>Junior SharePoint Developer</h3><p class="org">Arraycom (India) Ltd.</p>
+   <ul><li>Built a tiered portal with jQuery and Ajax, wrote stored procedures and deployed apps on IIS at client sites.</li></ul></div>
+  </article>
+ </div>
+</div></section>
+
+<section id="certifications" style="padding-top:0"><div class="wrap">
+ <h2>Certifications</h2>
+ <ul class="certs">
+  <li style="--c:var(--sp)"><b>PL-900</b><span>Power Platform Fundamentals</span></li>
+  <li style="--c:var(--pa)"><b>PL-100</b><span>Power Platform App Maker</span></li>
+  <li style="--c:var(--au)"><b>PL-200</b><span>Power Platform Functional Consultant</span></li>
+  <li style="--c:var(--bi)"><b>PL-400</b><span>Power Platform Developer Associate</span></li>
+ </ul>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+ <h2>Let’s build something</h2>
+ <p>Have a SharePoint migration, a Power Apps build or an automation problem? Send me a note.</p>
+ <div class="btns"><a class="btn primary" href="mailto:arpit6885@gmail.com">Email Arpit</a><a class="btn ghost" href="https://www.linkedin.com/in/arpit-patel-83827642/" target="_blank" rel="noopener">LinkedIn profile</a></div>
+</div></section>
+<footer><div class="wrap">© <span id="yr">2026</span> Arpit Patel</div></footer>
+<div class="stripe"></div>
+
+<script>
+const P={
+ apps:{n:"Power Apps",c:"var(--pa)",t:"Canvas and model-driven apps that replace InfoPath forms, spreadsheets and email chains.",b:["Converted InfoPath forms into canvas apps","Model-driven app tracking threat attacks and sequences at NAB","Vendor invoice submission app on Dataverse","Recertification app reused twice a year, cost calculator, rewards-points app"]},
+ au:{n:"Power Automate",c:"var(--au)",t:"Approvals, reminders and integrations that remove repetitive work.",b:["Migrated SharePoint Designer workflows to cloud flows","Scheduled flows that send periodic email reminders","Integrated Salesforce, SharePoint and SQL","Healthy ALM with GitHub and Azure DevOps pipelines"]},
+ bi:{n:"Power BI",c:"var(--bi)",ci:"#17142b",t:"Reports and dashboards that bring scattered data together.",b:["Report combining data from 3 SharePoint lists","Dashboard on Azure SQL data","Data modeling and report development"]},
+ sp:{n:"SharePoint",c:"var(--sp)",t:"Architecture, governance, migrations and custom development, from SharePoint 2007 to SharePoint Online.",b:["Enterprise move from SharePoint 2013 to SharePoint Online","SPFx web parts for employee spotlight and recognition","Purview retention, holds and discovery policies","Migrations with ShareGate and Content Matrix","REST API, AngularJS and jQuery web parts, provider-hosted apps"]},
+ dv:{n:"Dataverse",c:"var(--dv)",t:"Data models that stay clean as the apps on top of them grow.",b:["Tables, relationships and business rules","Security roles","Schemas for threat tracking and vendor invoices"]}
+};
+const $=s=>document.querySelector(s);
+function mk(parent,items,onClick,all){
+ items.forEach(([key,label,c,ci])=>{const b=document.createElement("button");b.className="tab";b.type="button";b.textContent=label;
+  b.style.setProperty("--c",c);if(ci)b.style.setProperty("--ci",ci);b.dataset.k=key;
+  b.onclick=()=>{parent.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-pressed",x===b));onClick(key)};
+  parent.appendChild(b)});
+}
+const tabs=$("#tabs");
+mk(tabs,Object.entries(P).map(([k,v])=>[k,v.n,v.c,v.ci]),k=>{
+ const v=P[k],p=$("#panel");p.style.setProperty("--pc",v.c);
+ p.innerHTML="<h3>"+v.n+"</h3><p>"+v.t+"</p><ul>"+v.b.map(x=>"<li>"+x+"</li>").join("")+"</ul>";
+ p.style.animation="none";p.offsetWidth;p.style.animation="";
+});
+tabs.querySelector(".tab").click();
+const jobs=[...document.querySelectorAll(".job")];
+mk($("#filters"),[["all","All roles","#17142b"],["sp","SharePoint","var(--sp)"],["apps","Power Apps","var(--pa)"],["au","Power Automate","var(--au)"],["bi","Power BI","var(--bi)","#17142b"],["dv","Dataverse","var(--dv)"]],k=>{
+ const c=k==="all"?null:P[k==="sp"?"sp":k].c;
+ jobs.forEach(j=>{j.classList.remove("hit","dim");if(!c)return;
+  if(j.dataset.t.split(" ").includes(k)){j.classList.add("hit");j.style.setProperty("--jc",c)}else j.classList.add("dim")});
+});
+$("#filters .tab").click();
+const nodes=[...document.querySelectorAll(".node")],rb=$("#run"),fs=$("#fstatus");
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+rb.onclick=async()=>{rb.disabled=true;nodes.forEach(n=>n.className="node");fs.textContent="Running…";
+ for(const n of nodes){n.classList.add("run");await sleep(750);n.classList.remove("run");n.classList.add("done")}
+ fs.textContent="Succeeded · 4 of 4 steps completed";rb.disabled=false;rb.textContent="▶ Run again"};
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);
+ const el=e.target,end=+el.dataset.n;if(reduce)return;let s=null;
+ const f=t=>{s=s??t;const p=Math.min((t-s)/1100,1);el.textContent=Math.round(end*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}));
+document.querySelectorAll("[data-n]").forEach(e=>io.observe(e));
+$("#yr").textContent=new Date().getFullYear();
+</script>
 </body>
 </html>
