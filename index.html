@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arpit Patel – Power Platform &amp; SharePoint Developer</title>
+<meta name="description" content="Microsoft-certified Power Platform and SharePoint developer with 12+ years of experience building automation, apps and intranets for enterprise clients.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f1f5f8; --surface:#ffffff; --ink:#0f2236; --muted:#4a5d70; --line:#d3dde6;
+  --accent:#0a6f8f; --accent-ink:#ffffff;
+  --c1:#9fb8c8; --c2:#6a95ae; --c3:#2f6f92; --c4:#0a6f8f;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0d1823; --surface:#14232f; --ink:#e8eff5; --muted:#9db0c0; --line:#26394a;
+    --accent:#5cc4e4; --accent-ink:#06202b; --c1:#35566b; --c2:#3f7694; --c3:#4c9bc0; --c4:#5cc4e4;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;gap:1.5rem;justify-content:flex-end;padding:1.25rem 0;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+header.hero{padding:2.5rem 0 4rem}
+h1{font-size:clamp(2.8rem,9vw,6rem);font-weight:800;letter-spacing:-.03em}
+.role{font-size:clamp(1.15rem,3vw,1.5rem);color:var(--muted);margin:1rem 0 2rem;max-width:36rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:.4rem;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.career{margin-top:3.5rem}
+.career p{margin:0 0 .6rem;color:var(--muted);font-size:.95rem}
+.bar{display:flex;gap:3px;height:3.2rem}
+.bar div{display:flex;align-items:flex-end;padding:.35rem .6rem;font-size:.8rem;font-weight:500;color:#fff;border-radius:.25rem;overflow:hidden;white-space:nowrap}
+.bar .s1{flex:1.4;background:var(--c1);color:var(--ink)}
+.bar .s2{flex:2;background:var(--c2)}
+.bar .s3{flex:5.6;background:var(--c3)}
+.bar .s4{flex:4.4;background:var(--c4);color:var(--accent-ink)}
+.years{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted);margin-top:.4rem}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:1.5rem}
+.about{max-width:42rem;font-size:1.15rem}
+.about p{margin:0 0 1rem}
+dl.skills{display:grid;grid-template-columns:minmax(10rem,14rem) 1fr;gap:1.1rem 2rem;margin:0}
+dl.skills dt{font-weight:500}
+dl.skills dd{margin:0;color:var(--muted)}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 2rem;padding:1.6rem 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:0}
+.job time{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.3rem;margin-bottom:.15rem}
+.job .org{color:var(--accent);font-weight:500;margin:0 0 .6rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.35rem}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;list-style:none;margin:0;padding:0}
+.certs li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);padding:1rem 1.1rem;border-radius:.3rem}
+.certs b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem;display:block}
+.certs span{color:var(--muted);font-size:.95rem}
+.contact p{max-width:34rem;margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:42rem){
+  dl.skills,.job{grid-template-columns:1fr}
+  dl.skills dd{margin-bottom:.6rem}
+  .bar div{font-size:.65rem;padding:.25rem .3rem}
+  nav{justify-content:flex-start;flex-wrap:wrap;gap:1rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Arpit Patel</h1>
+    <p class="role">Power Platform and SharePoint developer. I turn manual business processes into apps, flows and intranets that people actually use.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="Arpit_Patel.pdf">Download resume (PDF)</a>
+    </div>
+    <div class="career" role="img" aria-label="Career timeline from 2013 to today: Arraycom, Binary Republik, TCS, Reality-Craft">
+      <p>13 years of Microsoft 365 work, from SharePoint 2010-era portals to Power Platform at enterprise scale</p>
+      <div class="bar">
+        <div class="s1">Arraycom</div>
+        <div class="s2">Binary Republik</div>
+        <div class="s3">Tata Consultancy Services</div>
+        <div class="s4">Reality-Craft</div>
+      </div>
+      <div class="years"><span>2013</span><span>2016</span><span>2022</span><span>Today</span></div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about">
+      <p>I'm a Microsoft-certified developer with over 12 years in the SharePoint space and 7 years building on the Power Platform. I work with clients, many of them in finance and pharmaceuticals, to understand how their business runs, find what can be automated, and deliver solutions that last.</p>
+      <p>I also lead teams: removing blockers, reviewing code, and guiding migrations from SharePoint on-premises to SharePoint Online.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Power Platform</dt><dd>Power Apps (canvas and model-driven), Power Automate, Power BI reports and dashboards</dd>
+      <dt>SharePoint Online</dt><dd>Information architecture, custom web parts, SPFx, requirements gathering, migrations</dd>
+      <dt>Microsoft Dataverse</dt><dd>Data modeling, relationships, business rules, security roles</dd>
+      <dt>Data and reporting</dt><dd>Azure SQL (database design, queries, stored procedures), Power BI data modeling</dd>
+      <dt>Scripting and automation</dt><dd>PowerShell for SharePoint Online, Microsoft 365 and Azure</dd>
+      <dt>Delivery</dt><dd>Microsoft Teams, Jira, Planner, GitHub and Azure DevOps pipelines for Power Platform ALM</dd>
+    </dl>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <article class="job">
+      <time>May 2022 – Present</time>
+      <div>
+        <h3>Power Platform &amp; SharePoint Developer</h3>
+        <p class="org">Reality-Craft · National Australia Bank (NAB)</p>
+        <ul>
+          <li>Designed SharePoint architecture covering security, governance and compliance (Microsoft Purview retention, holds and discovery).</li>
+          <li>Led the move from SharePoint 2013 to SharePoint Online, including content analysis, mapping and migration planning.</li>
+          <li>Built a model-driven app on a custom Dataverse schema to track threat attacks and their sequences.</li>
+          <li>Delivered SPFx web parts for employee spotlight and recognition.</li>
+          <li>Migrated SharePoint Designer workflows to Power Automate; integrated Salesforce, SharePoint and SQL with Power Automate and Power BI.</li>
+          <li>Ran Power Platform ALM with GitHub and Azure DevOps pipelines.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <time>Mar 2019 – Apr 2022</time>
+      <div>
+        <h3>SharePoint / Power Platform Lead</h3>
+        <p class="org">Tata Consultancy Services · Johnson &amp; Johnson Services Inc</p>
+        <ul>
+          <li>Led a team of SharePoint developers across one of the largest SharePoint 2013 and SharePoint Online environments in the organization.</li>
+          <li>Converted InfoPath forms to canvas Power Apps; built a reusable recertification app, a cost calculator and a vendor invoice submission app on Dataverse.</li>
+          <li>Built a Power BI dashboard on Azure SQL data.</li>
+          <li>Managed SharePoint Online administration and external sharing policies; ran code reviews and wrote admin and user documentation.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <time>May 2018 – Feb 2019</time>
+      <div>
+        <h3>SharePoint Developer</h3>
+        <p class="org">Tata Consultancy Services · NBCUniversal Media, LLC</p>
+        <ul>
+          <li>Migrated file shares to SharePoint Online and OneDrive for Business with ShareGate.</li>
+          <li>Converted SharePoint Designer workflows to Power Automate and built a Process Integrity canvas app.</li>
+          <li>Built a homepage web part with the SharePoint REST API and jQuery, plus a utility to export file metadata and permissions.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <time>Oct 2017 – Apr 2018</time>
+      <div>
+        <h3>SharePoint Developer</h3>
+        <p class="org">Tata Consultancy Services · Kroll Information Assurance, LLC</p>
+        <ul>
+          <li>Migrated a SharePoint 2007 site to SharePoint Online using Content Matrix.</li>
+          <li>Re-engineered a complex web part and built a rewards-points canvas app.</li>
+          <li>Developed a provider-hosted app for elevated-privilege scenarios in SharePoint Online.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <time>Aug 2016 – Sep 2017</time>
+      <div>
+        <h3>SharePoint Developer</h3>
+        <p class="org">Tata Consultancy Services · Johnson &amp; Johnson Services Inc</p>
+        <ul>
+          <li>Built custom web parts, workflows, event receivers and publishing pages with AngularJS, jQuery and JavaScript.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <time>Sep 2014 – Aug 2016</time>
+      <div>
+        <h3>SharePoint Developer</h3>
+        <p class="org">Binary Republik</p>
+        <ul>
+          <li>Delivered custom web parts, workflows, remote event receivers and publishing page layouts for pharmaceutical and finance clients.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <time>Apr 2013 – Aug 2014</time>
+      <div>
+        <h3>Junior SharePoint Developer</h3>
+        <p class="org">Arraycom (India) Ltd.</p>
+        <ul>
+          <li>Built a tiered portal with jQuery and the Ajax toolkit, wrote stored procedures and deployed applications on IIS at client sites.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul class="certs">
+      <li><b>PL-900</b><span>Power Platform Fundamentals</span></li>
+      <li><b>PL-100</b><span>Power Platform App Maker</span></li>
+      <li><b>PL-200</b><span>Power Platform Functional Consultant</span></li>
+      <li><b>PL-400</b><span>Power Platform Developer Associate</span></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Have a SharePoint migration, a Power Apps build or an automation problem? Send me a note.</p>
+    <div class="btns"><a class="btn primary" href="mailto:arpit6885@gmail.com">Email Arpit</a><a class="btn ghost" href="https://www.linkedin.com/in/arpit-patel-83827642/" target="_blank" rel="noopener">LinkedIn profile</a></div>
+  </section>
+
+  <footer>© <span id="yr">2026</span> Arpit Patel</footer>
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
